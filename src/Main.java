@@ -9,14 +9,16 @@
         убыванию площадей;
         – вывод на экран всех объектов и объектов из заданного диапазо-
         на диагоналей.
+
         2. Описать класс "матрица", члены класса: размерность матрицы
-        и ее элементы. Требуется определить конструктор, метод вывода мат-
-        рицы и метод проверки, является ли эта матрица диагональной, нуле-
+        и ее элементы. Требуется определить конструктор, метод вывода
+        матрицы и метод проверки, является ли эта матрица диагональной, нуле-
         вой или единичной.
         В программе необходимо реализовать следующие действия:
         – ввод с клавиатуры информации в массив, состоящий из 10 эле-
         ментов разработанного класса; объекты должны быть упорядочены по
-        возрастанию числа элементов; – вывод на экран всех объектов и объектов заданного типа (диа-
+        возрастанию числа элементов;
+        – вывод на экран всех объектов и объектов заданного типа (диа-
         гональная, нулевая или единичная матрица).
         Примечание: при разработке классов использовать внутренние
         классы для объединения однотипных полей, где это возможно.
@@ -27,21 +29,30 @@ import java.util.Scanner;
 import java.util.Random;
 import Geometric_shapes.Quadrangle;
 import Geometric_shapes.Shapes;
+import Matrix.Matrix;
+import Matrix.Set;
 
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Random random = new Random();
 
+//        Matrix matrix = new Matrix(scanner);
+
+        Set set = new Set(scanner);
+        set.print();
+        set.print("default");
+
+
 //        Quadrangle quadrangle = new Quadrangle(scanner, 0);
 //
 //        quadrangle.print_lengths();
 //        quadrangle.print_diagonals();
 //        quadrangle.print_area();
-
-        Shapes shapes = new Shapes(random);
+//
+//        Shapes shapes = new Shapes(random);
 //        shapes.print();
-        shapes.print(5, 10);
+//        shapes.print(5, 10);
 
     }
 }

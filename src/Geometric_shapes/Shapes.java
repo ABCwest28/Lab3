@@ -14,6 +14,7 @@ public class Shapes {
         }
         Arrays.sort(quadrangles);
     }
+
     public Shapes(Random random) {
         for (int i = 0; i < quadrangles.length; ++i) {
             quadrangles[i] = new Quadrangle(random, i);
